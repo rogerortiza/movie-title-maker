@@ -20,7 +20,28 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 ## Testing Instructions
 
 For tesing purposes, please use only JSON files. Other file formats are not fully supported at
-this time and may cause unexpected behavior.
+this time and may cause unexpected behavior. You can upload your own json files or use the files in
+the dummy data folder from the project.
+
+If you decide to use you own json files please follow the next json structure:
+
+```json
+[
+    {
+        "title": "Producer",
+        "name": "Adam Smith"
+    },
+    {
+        "title": "Producer of Work",
+        "name": "Ramiro Palafox"
+    },
+    {
+        "title": "Music Producer",
+        "name": "Jose Samano"
+    }
+]
+
+You can upload more than one file
 
 ## Development server
 

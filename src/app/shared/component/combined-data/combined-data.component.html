@@ -1,0 +1,34 @@
+<h3>2 - Confirm combined data and make fixes if needed.</h3>
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8" [trackBy]="trackByFn">
+  
+    <!-- Title Column -->
+    <ng-container matColumnDef="title">
+        <th mat-header-cell *matHeaderCellDef> Title </th>
+        <td mat-cell *matCellDef="let element">
+            <mat-form-field *ngIf="!element.content.title || element.editingTitle">
+                <input matInput placeholder="Enter Title" [(ngModel)]="element.content.title" (blur)="element.editingTitle = false">
+            </mat-form-field>
+            <span *ngIf="element.content.title && !element.editingTitle" (click)="element.editingTitle = true">
+                {{element.content.title}}
+                <mat-icon class="edit-icon">edit</mat-icon>
+            </span>
+        </td>
+    </ng-container>
+  
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Name </th>
+        <td mat-cell *matCellDef="let element"> 
+            <mat-form-field *ngIf="!element.content.name || element.editingName">
+                <input matInput placeholder="Enter Name" [(ngModel)]="element.content.name" (blur)="element.editingName = false">
+            </mat-form-field>
+            <span *ngIf="element.content.name && !element.editingName" (click)="element.editingName = true">
+                {{element.content.name}}
+                <mat-icon class="edit-icon">edit</mat-icon>
+            </span>
+        </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>

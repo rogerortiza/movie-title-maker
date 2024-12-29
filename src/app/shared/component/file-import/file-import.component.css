@@ -1,0 +1,57 @@
+.file-import {
+    position: relative;
+    background: white;
+    border: 1px dashed #ccc;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.file-import.drag-over {
+    background-color: #e8f5e9;
+    border-color: #4caf50;
+}
+
+.file-import h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.file-import ul {
+    list-style-type: none;
+    margin-top: 1rem;
+}
+
+.file-import ul li {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.clear-btn {
+    background: #ff6666;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.clear-btn:hover {
+    background: #ff4d4d;
+}
+
+.file-btn {
+    background: #4caf4f6d;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.file-drag-drop {
+    font-size: 14px;
+}

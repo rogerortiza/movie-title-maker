@@ -1,0 +1,38 @@
+.preview-pane {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start ;
+    height: 50vh;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    overflow: auto;
+    padding: 20px;
+}
+
+.content {
+    animation: fadeIn 3s ease-in-out;
+}
+
+.title {
+    font-size: 3em;
+    margin-bottom: 20px 0;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 450px) {
+    .title {
+        font-size: 1.5em;
+    }
+}

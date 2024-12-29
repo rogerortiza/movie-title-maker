@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { 
+    height: 100%; 
+}
+
+body { 
+    /* margin: 0; */
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+    /* background-color: #f4f7fa;
+    color: #333; */
+    background-image: url('assets/images/movie.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: auto;
+}
+
+.container {
+    max-width: 900px; 
+    margin: 0 auto; 
+    padding: 0; 
+}

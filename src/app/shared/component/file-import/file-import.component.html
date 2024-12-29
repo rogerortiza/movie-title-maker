@@ -1,0 +1,30 @@
+<h3>1 - Import Files</h3>
+<div 
+    class="file-import"
+    [class.drag-over]="dragOver"
+    (dragover)="handleDragOver($event)" 
+    (dragleave)="handleDragLeave($event)"
+    (drop)="handleDrop($event)"
+>
+    <div *ngIf="importedFiles.length === 0">
+        <p class="file-drag-drop">Drag and drop files here, or click to browse.</p>
+    </div>
+
+    <input 
+        class="file-btn"
+        type="file"
+        multiple 
+        #fileInput
+        (change)="fileInput.files ? handleFileInput(fileInput.files) : null"
+        accept=".json, .txt, .docx, .pdf, .csv, .xls, .xlsx"
+    />
+
+    <ul *ngIf="importedFiles.length > 0">
+        <li *ngFor="let file of importedFiles">
+            <strong>{{ file.name }}</strong> ({{ file.type || 'Unknown type' }}) - 
+            {{ (file.size / 1024).toFixed(2) }} KB
+        </li>
+    </ul>
+
+    <button class="clear-btn" (click)="clearFiles()" *ngIf="importedFiles.length > 0">Clear Files</button>
+</div>

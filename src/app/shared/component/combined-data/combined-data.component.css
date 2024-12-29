@@ -1,0 +1,19 @@
+table {
+    background-color: white;
+
+}
+
+table th {
+    color: #664eee;
+    font-weight: bold;
+}
+
+table td {
+    color: #333;
+}
+
+.edit-icon {
+    color: orange;
+    cursor: pointer;
+    font-size: 20px;
+}

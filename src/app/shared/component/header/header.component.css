@@ -1,0 +1,10 @@
+.app-header {
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background-color: #c41e1e;
+    border-bottom: 3px solid #860d05;
+}

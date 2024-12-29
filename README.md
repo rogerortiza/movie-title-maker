@@ -2,6 +2,26 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
 
+## Features
+
+- Import movie data from JSON, CSV, and other file formats
+- Preview and edit movie titles and related information
+- Export movie data to JSON and text files
+- Drag-and-drop file import functionality
+- Responsive design for desktop and mobile devices
+
+## Project Structure
+
+- app: Contains the main application code
+    - shared: Contains Angular components and services
+- assets: Contains static assets such images and styles
+- src/environmets: Contains environment configuration files
+
+## Testing Instructions
+
+For tesing purposes, please use only JSON files. Other file formats are not fully supported at
+this time and may cause unexpected behavior.
+
 ## Development server
 
 To start a local development server, run:
